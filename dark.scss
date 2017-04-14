@@ -17,22 +17,25 @@
   $bgcolor4: rgba(1, 1, 1, 0.25);
   $bgcolor5: #111111;
   $bgcolor6: #442222;
+  $bordercolor: #442222;
+  $bordercolor2: #222244;
+  $bordercolor3: #333344;
 
 @-moz-document domain("slack.com") {
 body { background: $bgcolor; color: $color; }
   a { color: $linkcolor; }
   a:link, a:visited { color: $color3; }
   a:hover, a:active, a:focus { color: $color2; }
-  hr { border-bottom: 1px solid $bgcolor2; border-top: 1px solid $bgcolor; }
+  hr { border-bottom: 1px solid $bordercolor2; border-top: 1px solid $bgcolor; }
   h1, h2, h3, h4 { color: $color4; }
   h1 a { color: $color4; }
   h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: $color4; }
-  .bordered { border: 1px solid $bgcolor; }
-  .top_border { border-top: 1px solid $bgcolor; }
-  .bottom_border { border-bottom: 1px solid $bgcolor; }
-  .left_border { border-left: 1px solid $bgcolor; }
-  .right_border { border-right: 1px solid $bgcolor; }
-  .alert { background-color: $bgcolor; border-color: $bgcolor3; color: $color4; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .bordered { border: 1px solid $bordercolor; }
+  .top_border { border-top: 1px solid $bordercolor; }
+  .bottom_border { border-bottom: 1px solid $bordercolor; }
+  .left_border { border-left: 1px solid $bordercolor; }
+  .right_border { border-right: 1px solid $bordercolor; }
+  .alert { background-color: $bgcolor; border-color: $bordercolor2; color: $color4; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
   .alert h4 { color: $color4; }
   .alert-info { background-color: $bgcolor; border-color: $bgcolor3; color: $color4; }
   .alert-info h4 { color: $color4; }
@@ -41,12 +44,12 @@ body { background: $bgcolor; color: $color; }
   ::-webkit-scrollbar-corner { background: $bgcolor !important; }
   .supports_custom_scrollbar #messages_container::after { background: none !important; }
   .monkey_scroll_bar { background: $bgcolor5; }
-  .monkey_scroll_handle_inner { background: $bgcolor5; border: 1px solid $midcolor; }
+  .monkey_scroll_handle_inner { background: $bgcolor5; border: 1px solid $bordercolor; }
   .monkey_scroll_bar_native_scrollbar_shim { background: transparent; }
   #client-ui .monkey_scroll_bar { background: $bgcolor5; }
-  #client-ui .monkey_scroll_handle_inner { background: $bgcolor5; border: 3px solid $bgcolor; }
+  #client-ui .monkey_scroll_handle_inner { background: $bgcolor5; border: 3px solid $bordercolor; }
   #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_bar { background: $bgcolor5; }
-  #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner { background: $bgcolor5; border: 3px solid $bgcolor; }
+  #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner { background: $bgcolor5; border: 3px solid $bordercolor; }
   #col_channels { background-color: $bgcolor; color: $color4; }
   #col_channels_collapse_view { background: $bgcolor; }
   .channels_list_holder h2 { color: $color4 !important; }
@@ -63,7 +66,7 @@ body { background: $bgcolor; color: $color; }
   .channels_list_holder .unread_just { background: $bgcolor; color: $color4; }
   .channels_list_holder .unread_highlights { background: $midcolor4; color: $color4; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   .channels_list_new_btn { color: $color; }
-  .list_more { border-bottom: 1px dotted $color; color: $color !important; }
+  .list_more { border-bottom: 1px dotted $bordercolor2; color: $color !important; }
   .list_more:hover { border-bottom: 1px solid #cc6666; color: #cc6666 !important; }
   #channels_scroller.show_which_channel_is_active ul li.active .channel_name, #channels_scroller.show_which_channel_is_active ul li.active .group_name, #channels_scroller.show_which_channel_is_active ul li.active .mpim_name, #channels_scroller.show_which_channel_is_active ul li.active .im_name { background: $bgcolor; color: $color4 !important; }
   #channels_scroller.show_which_channel_is_active ul li.active a.group_name, #channels_scroller.show_which_channel_is_active ul li.active a.im_name, #channels_scroller.show_which_channel_is_active ul li.active a.mpim_name { background: $bgcolor; color: $color4; }
@@ -74,8 +77,8 @@ body { background: $bgcolor; color: $color; }
   #channel_scroll_down.unseen_have_mentions { background: $midcolor4; }
   #channel_scroll_up.unseen_have_mentions { background: $midcolor4; }
   #channel_scroll_up:hover { color: $color4; }
-  #list_controls { border-bottom: 1px solid $bgcolor; color: $midcolor3; }
-  #list_search { border: 1px solid $bgcolor; }
+  #list_controls { border-bottom: 1px solid $bordercolor; color: $midcolor3; }
+  #list_search { border: 1px solid $bordercolor; }
   #list_search_container .icon_search { color: $midcolor3; }
   #list_search_container .icon_close { color: $midcolor3; }
   #list_browser p.highlighted { background: $bgcolor; }
@@ -85,11 +88,11 @@ body { background: $bgcolor; color: $color; }
   #list_browser .item_purpose { color: $color4; }
   #list_browser_dialog .modal-footer a { color: $color; }
   #list_browser_dialog .modal-footer a:hover { color: #cc6666; }
-  #channel_list_invites_link { border-bottom: 1px dotted $color; color: $color !important; font-size: 0.9rem; }
-  #channel_list_invites_link:hover { border-bottom: 1px solid $color; }
-  #quick_switcher_btn { background: $bgcolor; border-top: 2px solid $bgcolor; }
+  #channel_list_invites_link { border-bottom: 1px dotted $bordercolor; color: $color !important; font-size: 0.9rem; }
+  #channel_list_invites_link:hover { border-bottom: 1px solid $bordercolor; }
+  #quick_switcher_btn { background: $bgcolor; border-top: 2px solid $bordercolor; }
   #quick_switcher_btn > i { color: $midcolor3; }
-  #quick_switcher_btn:active, #quick_switcher_btn:hover { background: $bgcolor; border-color: $bgcolor; }
+  #quick_switcher_btn:active, #quick_switcher_btn:hover { background: $bgcolor; border-color: $bordercolor; }
   #quick_switcher_btn:active > i, #quick_switcher_btn:hover > i { color: $color; }
   #quick_switcher_btn:active #quick_switcher_label, #quick_switcher_btn:hover #quick_switcher_label { color: $color; }
   #quick_switcher_btn:active #quick_switcher_shortcut, #quick_switcher_btn:hover #quick_switcher_shortcut { color: $color; }
@@ -104,12 +107,12 @@ body { background: $bgcolor; color: $color; }
   #loading_message_spinner { background-image: none; width: auto; }
   #loading_message_spinner::after { color: $midcolor3; content: "Loading..."; }
   body.loading #team_menu, body.loading #quick_switcher_btn, body.loading #team_menu_overlay, body.loading #col_channels_overlay, body.loading #col_channels { background-color: $bgcolor; }
-  input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], input[type=search] { background-color: $bgcolor5; border: 1px solid $bgcolor3; color: $color4; }
-  input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, input[type=number]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=color]:focus, input[type=search]:focus { border-color: rgba(40, 42, 46, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
+  input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], input[type=search] { background-color: $bgcolor5; border: 1px solid $bordercolor2; color: $color4; }
+  input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, input[type=number]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=color]:focus, input[type=search]:focus { border-color: $bordercolor2; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
   input[type=file]:focus { outline: $color4 dotted thin; }
   input[type=radio]:focus, input[type=checkbox]:focus { outline: $color4 dotted thin; }
   select { background: $bgcolor5; }
-  select, textarea { border: 1px solid $bgcolor3; color: $color4; }
+  select, textarea { border: 1px solid $bordercolor; color: $color4; }
   select:active, select:focus, textarea:active, textarea:focus { border-color: $bgcolor; box-shadow: 0 0 7px rgba(150, 152, 150, 0.15); }
   input:disabled, input:disabled:active, select:disabled, textarea:disabled { border-color: $bgcolor5 !important; }
   .no_touch input:hover, .no_touch select:hover, .no_touch textarea:hover { border-color: $bgcolor; }
@@ -118,10 +121,10 @@ body { background: $bgcolor; color: $color; }
   label.disabled { color: $color4; }
   legend { border-bottom: 1px solid $midcolor; }
   legend small { color: $midcolor3; }
-  .uneditable-input, .uneditable-textarea { background-color: $bgcolor5; border: 1px solid $bgcolor3; color: $color4; }
-  .uneditable-input:focus, .uneditable-textarea:focus { border-color: rgba(150, 152, 150, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
+  .uneditable-input, .uneditable-textarea { background-color: $bgcolor5; border: 1px solid $bordercolor2; color: $color4; }
+  .uneditable-input:focus, .uneditable-textarea:focus { border-color: $bordercolor; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
   textarea { background-color: $bgcolor5; border: 1px solid $bgcolor3; color: $color4; }
-  textarea:focus { border-color: rgba(150, 152, 150, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
+  textarea:focus { border-color: $bordercolor; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 152, 150, 0.6); }
   ::-webkit-input-placeholder { color: $color4 !important; -webkit-filter: none; filter: none; opacity: 0.5; }
   ::-moz-placeholder { color: $color4 !important; filter: none; opacity: 0.5; }
   ::placeholder { color: $color4 !important; filter: none; opacity: 0.5; }
@@ -129,20 +132,20 @@ body { background: $bgcolor; color: $color; }
   input::-moz-placeholder, textarea::-moz-placeholder { color: $color4 !important; filter: none; opacity: 0.5; }
   input::placeholder, textarea::placeholder { color: $color4 !important; filter: none; opacity: 0.5; }
   input[disabled], input[readonly], textarea[disabled], textarea[readonly] { background-color: $bgcolor5 !important; }
-  .form-actions { background-color: $bgcolor5; border-top: 1px solid $bgcolor; }
+  .form-actions { background-color: $bgcolor5; border-top: 1px solid $bordercolor; }
   .help-block, .help-inline { color: $midcolor3; }
-  .input-append .add-on, .input-prepend .add-on { background-color: $midcolor; border: 1px solid $bgcolor5; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+  .input-append .add-on, .input-prepend .add-on { background-color: $midcolor; border: 1px solid $bordercolor2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   .btn { background-color: $bgcolor5; color: $color4 !important; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   .btn.hover, .btn:focus, .btn:hover, .btn.active, .btn:active { background-color: $bgcolor5; color: $color4; }
-  .btn.btn_border { border: 2px solid $bgcolor5; }
+  .btn.btn_border { border: 2px solid $bordercolor2; }
   .btn.disabled, .btn:disabled { background-color: $bgcolor3 !important; }
   .btn.disabled:active, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:hover { background-color: $bgcolor3 !important; }
   .btn.btn_outline.btn_danger, .btn.btn_outline.btn_warning { background-color: $midcolor4 !important; color: $color4 !important; }
   .btn.btn_outline.btn_danger:focus, .btn.btn_outline.btn_danger:hover, .btn.btn_outline.btn_warning:focus, .btn.btn_outline.btn_warning:hover { background-color: $bgcolor !important; border-color: $midcolor4 !important; color: $midcolor4 !important; }
   .btn.btn_outline.disabled { background: $bgcolor5 !important; color: $color !important; }
   .btn.btn_outline.disabled:hover { background: $bgcolor5 !important; color: $color !important; }
-  .btn.btn_attachment { border-color: $bgcolor5; }
-  .btn.btn_attachment:hover, .btn.btn_attachment:focus { background-color: $bgcolor; border-color: $midcolor; }
+  .btn.btn_attachment { border-color: $bordercolor2; }
+  .btn.btn_attachment:hover, .btn.btn_attachment:focus { background-color: $bgcolor; border-color: $bordercolor3; }
   .btn.btn_attachment.btn_danger { border-color: $midcolor4; }
   .btn.btn_attachment.btn_danger:hover, .btn.btn_attachment.btn_danger:focus { border-color: #ef440f; }
   .btn.btn_attachment.btn_primary { border-color: $midcolor; }
