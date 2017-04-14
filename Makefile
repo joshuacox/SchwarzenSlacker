@@ -8,4 +8,4 @@ clean:
 	rm -f dark.css.map
 
 clip:
-	cat dark.css|clip
+	cat dark.css|xclip -i  -selection clipboard
