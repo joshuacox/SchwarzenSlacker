@@ -2,6 +2,12 @@
 
 Literally "Blacken the slack"
 
+## Quickstart
+
+Merely go
+[here](https://userstyles.org/styles/141526/schwarzenslacker)
+and install using stylish, if you want to create your own read on...
+
 ## Usage
 
 You can just copy the contents of dark.css into a stylish document.  If
