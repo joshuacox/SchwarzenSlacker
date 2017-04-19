@@ -3,6 +3,10 @@ darkslack
 
 ## Usage
 
+You can just copy the contents of dark.css into a stylish document.  If
+you want to edit it, edit dark.scss, and then follow along with the rest
+of this README.
+
 #### Manually
 
 ```
