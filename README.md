@@ -1,5 +1,6 @@
-# darkslack
-darkslack
+# SchwarzenSlacker
+
+Literally "Blacken the slack"
 
 ## Usage
 
