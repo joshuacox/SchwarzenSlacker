@@ -10,17 +10,17 @@ and install using stylish, if you want to create your own read on...
 
 ## Usage
 
-You can just copy the contents of dark.css into a stylish document.  If
-you want to edit it, edit dark.scss, and then follow along with the rest
+You can just copy the contents of schwarzenslacker.css into a stylish document.  If
+you want to edit it, edit schwarzenslacker.scss, and then follow along with the rest
 of this README.
 
 #### Manually
 
 ```
-sass dark.scss dark.css
+sass schwarzenslacker.scss schwarzenslacker.css
 ```
 
-Then copy the resulting dark.css into stylish and associate with your
+Then copy the resulting schwarzenslacker.css into stylish and associate with your
 selected slack domain.
 
 #### Makefile
@@ -29,5 +29,5 @@ selected slack domain.
 make
 ```
 
-Using the make method will automatically copy the resulting dark.css to
+Using the make method will automatically copy the resulting schwarzenslacker.css to
 your clipboard (assuming you are in X).  Then just paste into stylish
