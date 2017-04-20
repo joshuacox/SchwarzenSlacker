@@ -1,11 +1,11 @@
 all: clean build clip
 
 build:
-	sass dark.scss dark.css
+	sass schwarzenslacker.scss schwarzenslacker.css
 
 clean:
-	rm -f dark.css
-	rm -f dark.css.map
+	rm -f schwarzenslacker.css
+	rm -f schwarzenslacker.css.map
 
 clip:
-	cat dark.css|xclip -i  -selection clipboard
+	cat schwarzenslacker.css|xclip -i  -selection clipboard
