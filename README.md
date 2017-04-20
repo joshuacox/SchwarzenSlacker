@@ -10,10 +10,6 @@ and install using stylish, if you want to create your own read on...
 
 ## Usage
 
-You can just copy the contents of schwarzenslacker.css into a stylish document.  If
-you want to edit it, edit schwarzenslacker.scss, and then follow along with the rest
-of this README.
-
 #### Manually
 
 ```
@@ -31,3 +27,7 @@ make
 
 Using the make method will automatically copy the resulting schwarzenslacker.css to
 your clipboard (assuming you are in X).  Then just paste into stylish
+
+#### Installation
+
+You can just copy the contents of schwarzenslacker.css into a stylish document.
