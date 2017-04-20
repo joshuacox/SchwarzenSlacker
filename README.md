@@ -1,5 +1,8 @@
 # SchwarzenSlacker
 
+[![Build
+Status](https://travis-ci.org/joshuacox/SchwarzenSlacker.svg?branch=master)](https://travis-ci.org/joshuacox/SchwarzenSlacker)
+
 Literally "Blacken the slack"
 
 ## Quickstart
