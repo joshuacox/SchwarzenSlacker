@@ -1,11 +1,17 @@
 all: clean build clip
 
+SCHWARZ=schwarzenslacker.scss
+OUTPUT_CSS=schwarzenslacker.css
+
 build:
-	sass schwarzenslacker.scss schwarzenslacker.css
+	sass ${SCHWARZ} ${OUTPUT_CSS}
 
 clean:
-	rm -f schwarzenslacker.css
-	rm -f schwarzenslacker.css.map
+	rm -f ${OUTPUT_CSS}
+	rm -f ${OUTPUT_CSS}.map
 
 clip:
-	cat schwarzenslacker.css|xclip -i  -selection clipboard
+	cat ${OUTPUT_CSS}|xclip -i  -selection clipboard
+
+test:
+	sass -c ${SCHWARZ}
